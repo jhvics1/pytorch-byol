@@ -191,3 +191,15 @@ https://github.com/lucidrains/pixel-level-contrastive-learning
     primaryClass={cs.CV}
 }
 ```
+
+
+# Sample script
+
+```
+# train
+python byol_train.py --gpu-id 0 --image_folder ../../dataset/neu-split-2/train --batch-size 5 --epoch 1
+```
+```
+# fine-tune
+python byol_finetune.py --gpu-id 0 --image_folder ../../dataset/neu-split/ --batch-size 5 --epoch 100 --model-path ../checkpoints/neu-resnet18-bs5-lr0.10000-tag/2021-02-17T18\:49\:24.912461/byol.pt  --num-classes 6 --tune-all 
+```

@@ -12,7 +12,8 @@ setup(
   keywords = ['self-supervised learning', 'artificial intelligence'],
   install_requires=[
       'torch>=1.6',
-      'torchvision>=0.8'
+      'torchvision>=0.8',
+      'tensorboardx',
   ],
   classifiers=[
       'Development Status :: 4 - Beta',
